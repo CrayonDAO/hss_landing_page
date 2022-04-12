@@ -1,0 +1,92 @@
+@use "sass:math";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+
+html,
+#app,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+.fs-sm {
+  font-size: 0.9rem !important;
+}
+.fs-md {
+  font-size: 1.2rem !important;
+}
+.fs-lg {
+  font-size: 1.25rem !important;
+}
+.fs-xl {
+  font-size: 1.35rem !important;
+}
+.fs-xxl {
+  font-size: 1.7rem !important;
+}
+
+@for $var from 2 through 9 {
+  .fw-#{$var}#{"00"} {
+    font-weight: #{$var}#{"00"} !important;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 2013px) and (orientation: portrait) {
+  .text {
+    font-size: calc((1 - 1) * 1.2vh + 1rem) !important;
+  }
+  .title {
+    font-size: calc((1.2 - 1) * 1.2vh + 1rem) !important;
+  }
+  .list-text {
+    font-size: calc((0.9 - 1) * 1.2vh + 1rem) !important;
+  }
+  .list-text-sm {
+    font-size: calc((0.8 - 1) * 1.2vh + 1rem) !important;
+  }
+  .title-lg {
+    font-size: calc((2.8 - 1) * 1.2vh + 1rem) !important;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 2013px) and (orientation: landscape) {
+  .text {
+    font-size: calc((1 - 1) * 1.2vw + 1rem) !important;
+  }
+  .title {
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem) !important;
+  }
+  .list-text {
+    font-size: calc((0.9 - 1) * 1.2vw + 1rem) !important;
+  }
+  .list-text-sm {
+    font-size: calc((0.8 - 1) * 1.2vw + 1rem) !important;
+  }
+  .title-lg {
+    font-size: calc((2.8 - 1) * 1.2vw + 1rem) !important;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 2013px) and (orientation: landscape) {
+}
+@media screen and (min-width: 2014px) {
+  .list-text-sm {
+    font-size: calc(0.8 * 1rem) !important;
+  }
+  .list-text {
+    font-size: calc(0.9 * 1rem) !important;
+  }
+  .text {
+    font-size: calc(1 * 1rem) !important;
+  }
+  .title {
+    font-size: calc(1.2 * 1rem) !important;
+  }
+}
+
+@include tablet {
+  html,
+  #app,
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,45 @@
+ul,
+li,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.btn,
+input {
+  &:focus,
+  .focus,
+  &:hover,
+  .hover,
+  &:active,
+  .active {
+    color: inherit;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none;
+    -webkit-tap-highlight-color: transparent;
+    span,
+    a {
+      text-decoration: none !important;
+    }
+  }
+  &.btn-link {
+    text-decoration: none;
+  }
+  span {
+    font-size: inherit;
+  }
+}

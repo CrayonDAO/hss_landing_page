@@ -1,0 +1,27 @@
+$white: #fff;
+$black: #000;
+$yellow: #f1c670;
+$yellow-2: #fff5c1;
+$yellow-3: #b1a781;
+$gray: #7b8484;
+
+$btn-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+
+// $container-max-widths: (
+//   sm: 100%,
+//   md: 100%,
+//   lg: 100%,
+//   xl: 100%,
+// ) !default;
+
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
